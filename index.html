@@ -62,7 +62,9 @@
         .stage-wrap {
           display: flex !important; flex-direction: column !important;
           min-height: auto !important; height: auto !important;
-          perspective: none !important; gap: 10px !important;
+          perspective: none !important; gap: 12px !important;
+          padding: 20px 0 !important;
+          border-top: 1px solid rgba(26,28,29,0.18) !important;
         }
         .product-card {
           order: 1 !important; width: 100% !important;
@@ -85,30 +87,35 @@
 
         /* ── Sketch ── */
         .sketch-section {
-          width: 100% !important; padding: 16px 14px !important; margin: 0 !important;
+          width: 100% !important; padding: 20px 14px !important; margin: 0 !important;
+          border-top: 1px solid rgba(26,28,29,0.18) !important;
+          border-bottom: 1px solid rgba(26,28,29,0.18) !important;
         }
-        .sketch-prompt { font-size: 13px !important; line-height: 1.65 !important; }
-        .sketch-grid { grid-template-columns: 1fr 1fr !important; }
+        .sketch-prompt { font-size: 13px !important; line-height: 1.65 !important; margin: 0 0 14px 0 !important; }
+        .sketch-grid { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
 
         /* ── Prototype: stack stays, text below ── */
         .prototype-section {
           display: flex !important; flex-direction: column !important;
-          gap: 14px !important; padding: 14px !important;
+          gap: 16px !important; padding: 20px 14px !important;
+          border-top: 1px solid rgba(26,28,29,0.18) !important;
         }
         .prototype-stack {
           width: 100% !important; max-width: 100% !important;
           aspect-ratio: 4 / 3 !important; margin: 0 !important;
         }
-        .prototype-copy h3 { font-size: 22px !important; }
-        .prototype-copy p { font-size: 13px !important; }
+        .prototype-copy { padding-top: 4px !important; }
+        .prototype-copy h3 { font-size: 22px !important; margin-bottom: 10px !important; }
+        .prototype-copy p { font-size: 13px !important; line-height: 1.65 !important; }
 
         /* ── Video / Safety ── */
         .video-section {
           width: 100% !important; margin: 0 !important;
-          padding: 14px !important; grid-template-columns: 1fr !important;
+          padding: 20px 14px !important; grid-template-columns: 1fr !important;
+          border-top: 1px solid rgba(26,28,29,0.18) !important;
         }
-        .video-copy h3 { font-size: 20px !important; }
-        .video-text { font-size: 13px !important; }
+        .video-copy h3 { font-size: 20px !important; margin-bottom: 10px !important; }
+        .video-text { font-size: 13px !important; line-height: 1.65 !important; }
 
         /* ── Footer ── */
         .site-footer { padding: 1.4rem 0 1.6rem !important; }
