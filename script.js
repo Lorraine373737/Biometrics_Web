@@ -249,6 +249,13 @@ function initPrototypeStack() {
 }
 
 function init() {
+  // Device-level mobile detection to force stable single-column layout
+  const mobileLike =
+    window.matchMedia("(max-width: 1024px)").matches ||
+    window.matchMedia("(pointer: coarse)").matches ||
+    /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  if (mobileLike) document.body.classList.add("is-mobile");
+
   // Lenis smooth scrolling (Aesop-style inertia reference)
   if (window.Lenis) {
     lenisInstance = new window.Lenis({

@@ -1018,3 +1018,99 @@ img#product-image {
     justify-content: center !important;
   }
 }
+
+/* Device-forced mobile layout (applies even when width detection fails) */
+body.is-mobile .top-nav {
+  position: sticky !important;
+  top: 0;
+  z-index: 120;
+}
+
+body.is-mobile .page {
+  padding: 14px 16px 9vh !important;
+  gap: 20px !important;
+}
+
+body.is-mobile .material-hero {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+body.is-mobile .material-media {
+  min-height: 48vh !important;
+}
+
+body.is-mobile .hero {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  top: auto !important;
+  padding: 12px 0 0 !important;
+  margin: 0 !important;
+}
+
+body.is-mobile .stage-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  min-height: auto !important;
+  gap: 12px !important;
+}
+
+body.is-mobile .floating-info-cards {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  margin: 0 0 10px 0 !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+}
+
+body.is-mobile .float-card,
+body.is-mobile .card-a,
+body.is-mobile .card-b,
+body.is-mobile .card-c,
+body.is-mobile .card-d {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+body.is-mobile .product-card {
+  width: 100% !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+}
+
+body.is-mobile .prototype-section {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  padding: 16px !important;
+}
+
+body.is-mobile .prototype-stack {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 4 / 3 !important;
+  margin: 0 !important;
+}
+
+body.is-mobile .video-section,
+body.is-mobile .sketch-section {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 16px !important;
+}
+
+body.is-mobile .footer-inner {
+  align-items: center !important;
+  text-align: center !important;
+}
