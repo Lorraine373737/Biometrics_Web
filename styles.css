@@ -1114,3 +1114,101 @@ body.is-mobile .footer-inner {
   align-items: center !important;
   text-align: center !important;
 }
+
+/* Final mobile override: prevent overlap on real devices */
+@media (max-width: 900px) {
+  body.is-mobile .page {
+    padding-top: 80px !important;
+    gap: 30px !important;
+  }
+
+  body.is-mobile .material-hero {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  body.is-mobile .material-media {
+    position: relative !important;
+    height: 45vh !important;
+    min-height: 45vh !important;
+    width: 100% !important;
+    z-index: auto !important;
+  }
+
+  body.is-mobile .material-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  body.is-mobile .hero {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    z-index: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 16px !important;
+    margin: 0 !important;
+  }
+
+  body.is-mobile .hero h1 {
+    font-size: clamp(32px, 10vw, 48px) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 15px !important;
+  }
+
+  body.is-mobile .stage-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: auto !important;
+    perspective: none !important;
+    gap: 12px !important;
+  }
+
+  body.is-mobile .product-card {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 560px !important;
+    margin: 0 auto 20px !important;
+    z-index: auto !important;
+  }
+
+  body.is-mobile .floating-info-cards {
+    order: 2 !important;
+    position: relative !important;
+    inset: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    pointer-events: auto !important;
+    z-index: auto !important;
+  }
+
+  body.is-mobile .float-card {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 10px !important;
+  }
+
+  body.is-mobile .top-nav {
+    z-index: 120 !important;
+  }
+}
