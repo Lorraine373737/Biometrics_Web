@@ -806,29 +806,51 @@ img#product-image {
 @media (max-width: 768px) {
   .page {
     min-height: 100vh;
-    padding: 0 16px 9vh;
+    padding: 72px 16px 9vh;
+    gap: 22px;
+  }
+
+  .material-hero {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .material-media {
+    min-height: 56vh;
   }
 
   .hero {
-    left: 18px;
-    right: 18px;
+    position: static;
     max-width: none;
-    bottom: 30px;
+    margin: 0;
+    padding: 14px 16px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 12vw, 60px);
+    line-height: 0.96;
   }
 
   .top-nav {
-    flex-wrap: wrap;
-    gap: 10px 12px;
-    padding: 8px 12px 10px;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 8px 0 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .top-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-item {
-    min-width: 0;
-    flex: 1 1 calc(50% - 8px);
+    min-width: 220px;
+    flex: 0 0 auto;
     grid-template-columns: 20px auto;
     font-size: 14px;
-    border-right: none;
-    padding-right: 0;
+    border-right: 1px solid rgba(26, 28, 29, 0.22);
+    padding: 0 12px;
   }
 
   .nav-icon {
@@ -873,6 +895,12 @@ img#product-image {
 
   .members {
     justify-content: flex-start;
+  }
+
+  .prototype-section,
+  .video-section,
+  .sketch-section {
+    padding-inline: 16px;
   }
 
   .cursor-dot,
