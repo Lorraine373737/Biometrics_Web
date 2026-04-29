@@ -753,6 +753,185 @@ img#product-image {
   content: " • ";
 }
 
+/* =============================================
+   SINGLE CLEAN MOBILE BLOCK – replaces all previous mobile overrides
+   ============================================= */
+@media (max-width: 900px) {
+
+  /* --- CSS variables --- */
+  :root {
+    --body-copy-size: 13px;
+    --card-max-width: min(88vw, 520px);
+    --glass-size: 120px;
+  }
+
+  /* --- cursor --- */
+  body { cursor: auto !important; }
+  .cursor-dot, .cursor-ring { display: none !important; }
+
+  /* --- nav: compact horizontal scroll --- */
+  .top-nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 300 !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    padding: 6px 0 8px !important;
+    gap: 0 !important;
+  }
+  .top-nav::-webkit-scrollbar { display: none !important; }
+
+  .nav-item {
+    flex: 0 0 auto !important;
+    min-width: 160px !important;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    grid-template-columns: 18px auto !important;
+    column-gap: 6px !important;
+    padding: 0 10px !important;
+    border-right: 1px solid rgba(26,28,29,0.18) !important;
+  }
+  .nav-icon { width: 18px !important; height: 18px !important; }
+  .nav-item::after { font-size: 8px !important; }
+
+  /* --- page shell --- */
+  .page {
+    padding: 70px 14px 8vh !important;
+    gap: 20px !important;
+  }
+
+  /* --- hero: flow layout (image above, text below) --- */
+  .material-hero {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+  }
+  .material-media {
+    position: relative !important;
+    width: 100% !important;
+    height: 44vh !important;
+    min-height: 44vh !important;
+    overflow: hidden !important;
+  }
+  .material-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+  .hero {
+    position: relative !important;
+    left: auto !important; right: auto !important;
+    top: auto !important; bottom: auto !important;
+    transform: none !important;
+    z-index: auto !important;
+    max-width: 100% !important;
+    padding: 16px 0 0 !important;
+    margin: 0 !important;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 9vw, 42px) !important;
+    line-height: 1.1 !important;
+  }
+  .description { font-size: 13px !important; }
+
+  /* --- product overview text --- */
+  .intro-block p { font-size: 13px !important; }
+  .intro-block h2 { font-size: 12px !important; }
+
+  /* --- design philosophy: single column, no absolute float cards --- */
+  .stage-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+    height: auto !important;
+    perspective: none !important;
+    gap: 12px !important;
+  }
+  .floating-info-cards {
+    position: relative !important;
+    inset: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    order: 2 !important;
+  }
+  .float-card,
+  .card-a, .card-b, .card-c, .card-d {
+    position: relative !important;
+    left: auto !important; right: auto !important;
+    top: auto !important; bottom: auto !important;
+    transform: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .spec-panel { font-size: 12px !important; }
+  .product-card {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* --- sketch section --- */
+  .sketch-section {
+    width: 100% !important;
+    padding: 20px 14px !important;
+    margin: 0 !important;
+  }
+  .sketch-prompt { font-size: 13px !important; line-height: 1.6 !important; }
+  .sketch-grid { grid-template-columns: 1fr !important; }
+
+  /* --- prototype: flat card list instead of absolute stack --- */
+  .prototype-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    padding: 14px !important;
+  }
+  .prototype-stack {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    margin: 0 !important;
+  }
+  .prototype-copy p { font-size: 13px !important; }
+  .prototype-copy h3 { font-size: 24px !important; }
+
+  /* --- video section --- */
+  .video-section {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    grid-template-columns: 1fr !important;
+  }
+  .video-copy h3 { font-size: 22px !important; }
+  .video-text { font-size: 13px !important; }
+
+  /* --- footer --- */
+  .site-footer { padding: 1.4rem 0 1.6rem !important; }
+  .footer-inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding-inline: 14px !important;
+  }
+  .footer-right { justify-items: center !important; }
+  .members { justify-content: center !important; }
+  .footer-left,
+  .team-title,
+  .members { font-size: 12px !important; }
+}
+
+/* keep legacy rule name for INTERNAL reference only */
 @media (max-width: 920px) {
   .stage-wrap {
     grid-template-columns: 1fr;
