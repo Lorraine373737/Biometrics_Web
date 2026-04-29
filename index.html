@@ -93,6 +93,8 @@
         }
         .sketch-prompt { font-size: 13px !important; line-height: 1.65 !important; margin: 0 0 14px 0 !important; }
         .sketch-grid { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
+        .sketch-item { aspect-ratio: 3/4 !important; overflow: hidden !important; border-radius: 6px !important; }
+        .sketch-item img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
 
         /* ── Prototype: stack stays, text below ── */
         .prototype-section {
@@ -103,6 +105,8 @@
         .prototype-stack {
           width: 100% !important; max-width: 100% !important;
           aspect-ratio: 4 / 3 !important; margin: 0 !important;
+          overflow: hidden !important;
+          border-radius: 10px !important;
         }
         .prototype-copy { padding-top: 4px !important; }
         .prototype-copy h3 { font-size: 22px !important; margin-bottom: 10px !important; }
