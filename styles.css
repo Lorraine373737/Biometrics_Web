@@ -1212,3 +1212,178 @@ body.is-mobile .footer-inner {
     z-index: 120 !important;
   }
 }
+
+/* MOBILE FINAL OVERRIDE v3 (must stay at file end) */
+@media (max-width: 900px) {
+  .top-nav,
+  body.is-mobile .top-nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 300 !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    padding: 6px 0 8px !important;
+    gap: 0 !important;
+  }
+
+  .nav-item,
+  body.is-mobile .nav-item {
+    flex: 0 0 auto !important;
+    min-width: 180px !important;
+    grid-template-columns: 18px auto !important;
+    font-size: 12px !important;
+    line-height: 1.1 !important;
+    padding: 0 10px !important;
+    border-right: 1px solid rgba(26, 28, 29, 0.18) !important;
+  }
+
+  .nav-icon,
+  body.is-mobile .nav-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .nav-item::after,
+  body.is-mobile .nav-item::after {
+    font-size: 8px !important;
+    margin-top: 0 !important;
+  }
+
+  .page,
+  body.is-mobile .page {
+    padding: 78px 14px 8vh !important;
+    gap: 18px !important;
+  }
+
+  .material-hero,
+  body.is-mobile .material-hero {
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .material-media,
+  body.is-mobile .material-media {
+    height: 42vh !important;
+    min-height: 42vh !important;
+  }
+
+  .hero,
+  body.is-mobile .hero {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    max-width: 100% !important;
+    padding: 12px 4px 0 !important;
+    margin: 0 !important;
+    z-index: auto !important;
+  }
+
+  .hero h1,
+  body.is-mobile .hero h1 {
+    font-size: clamp(30px, 10vw, 44px) !important;
+    line-height: 1.08 !important;
+  }
+
+  .stage-wrap,
+  body.is-mobile .stage-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+    height: auto !important;
+    perspective: none !important;
+    gap: 10px !important;
+  }
+
+  .floating-info-cards,
+  body.is-mobile .floating-info-cards {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    order: 2 !important;
+  }
+
+  .float-card,
+  .card-a,
+  .card-b,
+  .card-c,
+  .card-d,
+  body.is-mobile .float-card,
+  body.is-mobile .card-a,
+  body.is-mobile .card-b,
+  body.is-mobile .card-c,
+  body.is-mobile .card-d {
+    position: relative !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .product-card,
+  body.is-mobile .product-card {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Disable absolute stack on mobile to avoid overlap */
+  .prototype-section,
+  body.is-mobile .prototype-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 14px !important;
+  }
+
+  .prototype-stack,
+  body.is-mobile .prototype-stack {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .prototype-card,
+  body.is-mobile .prototype-card {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .prototype-card.is-ejecting,
+  body.is-mobile .prototype-card.is-ejecting {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .video-section,
+  .sketch-section,
+  body.is-mobile .video-section,
+  body.is-mobile .sketch-section {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    grid-template-columns: 1fr !important;
+  }
+}
