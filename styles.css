@@ -912,3 +912,109 @@ img#product-image {
     cursor: auto;
   }
 }
+
+/* Hard mobile layout reset to prevent overlaps */
+@media (max-width: 900px) {
+  .top-nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 120;
+  }
+
+  .page {
+    padding-top: 14px !important;
+    gap: 20px !important;
+  }
+
+  .material-hero {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .material-media {
+    min-height: 48vh !important;
+  }
+
+  .hero {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    padding: 12px 0 0 !important;
+    margin: 0 !important;
+  }
+
+  .stage-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    min-height: auto !important;
+    gap: 12px !important;
+  }
+
+  .floating-info-cards {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin: 0 0 10px 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .float-card,
+  .card-a,
+  .card-b,
+  .card-c,
+  .card-d {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .product-card {
+    width: 100% !important;
+    max-width: 560px !important;
+    margin: 0 auto !important;
+  }
+
+  .prototype-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 16px !important;
+  }
+
+  .prototype-stack {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    margin: 0 !important;
+  }
+
+  .video-section,
+  .sketch-section {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 16px !important;
+  }
+
+  .footer-inner {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-right,
+  .members {
+    justify-items: center !important;
+    justify-content: center !important;
+  }
+}
