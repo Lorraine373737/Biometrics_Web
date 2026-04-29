@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>产品展示 | Smooth 3D Showcase</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <a class="nav-item" href="#hero" data-meta="product intro">
+        <span class="nav-icon nav-icon-home" aria-hidden="true"></span>
+        <span>Hero</span>
+      </a>
+      <a class="nav-item" href="#product-overview" data-meta="concept notes">
+        <span class="nav-icon nav-icon-grid" aria-hidden="true"></span>
+        <span>Product overview</span>
+      </a>
+      <a class="nav-item" href="#design-philosophy" data-meta="material logic">
+        <span class="nav-icon nav-icon-focus" aria-hidden="true"></span>
+        <span>Design philosophy</span>
+      </a>
+      <a class="nav-item" href="#sketch-display" data-meta="sketch variants">
+        <span class="nav-icon nav-icon-grid" aria-hidden="true"></span>
+        <span>Sketch Display</span>
+      </a>
+      <a class="nav-item" href="#diegetic-prototype" data-meta="physical build">
+        <span class="nav-icon nav-icon-focus" aria-hidden="true"></span>
+        <span>Diegetic Prototype</span>
+      </a>
+      <a class="nav-item" href="#operational-protocol" data-meta="safety clause">
+        <span class="nav-icon nav-icon-video" aria-hidden="true"></span>
+        <span>Operational protocol &amp; safety</span>
+      </a>
+      <a class="nav-item" href="#team" data-meta="credits">
+        <span class="nav-icon nav-icon-team" aria-hidden="true"></span>
+        <span>Design Team</span>
+      </a>
+    </header>
+
+    <div class="progress-track" aria-hidden="true">
+      <div id="scroll-progress" class="progress-bar"></div>
+    </div>
+    <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+
+    <main class="page">
+      <section id="hero" class="material-hero">
+        <div class="material-media">
+          <img src="./assets/hero-gallery.png?v=1" alt="Symbio-Node 材质画廊展示" />
+        </div>
+        <div class="hero">
+          <p class="eyebrow"><span class="dot-led"></span> Industrial Product Interface</p>
+          <h1>Symbio-Node™ SN-2040</h1>
+          <p class="description">
+            The Ultimate Link Between Neural Agency and Digital Labor.
+          </p>
+        </div>
+      </section>
+
+      <section id="product-overview" class="intro-block">
+        <h2>Product Brief</h2>
+        <p>
+          Designed at the intersection of biological elegance and tactical logic, the Symbio-Node™ is a
+          high-performance bio-hub engineered for seamless neural intervention. By integrating a flexible hydrogel
+          substrate with an advanced electrode array, it facilitates a new era of agency verification, allowing the
+          body to transcend its physical limitations through AI-driven proxy control.
+        </p>
+      </section>
+
+      <section id="design-philosophy" class="stage-wrap">
+        <div class="floating-info-cards" aria-hidden="true">
+          <article class="spec-panel float-card card-a">
+            Inspired by this, we incorporated slime mold into the design of the final product. Based on theoretical
+            principles, we constructed this material into a three-layer structure.
+          </article>
+          <article class="spec-panel float-card card-b">
+            The bottom layer consists of a hydrogel, which serves as an ideal substrate given the slime mold's strong
+            hydrophilicity; it also collects sweat and other signals.
+          </article>
+          <article class="spec-panel float-card card-c">
+            The middle layer comprises a maze-like network of channels, primarily providing a growth space.
+          </article>
+          <article class="spec-panel float-card card-d">
+            The top layer is the sensor hardware layer, which we plan to arrange in a matrix pattern to detect changes
+            as the slime mold grows. Growth paths shift with lactic acid or cortisol levels in the body.
+          </article>
+        </div>
+
+        <div id="product-card" class="product-card" style="background: transparent; background-color: transparent;">
+          <div class="glow-layer" aria-hidden="true"></div>
+
+          <img
+            id="product-image"
+            class="product-image product-image-element"
+            src="./assets/product-transparent-v3.png?v=3"
+            alt="产品渲染图"
+            draggable="false"
+            style="background: none; background-color: transparent;"
+          />
+
+          <div id="lens" class="lens" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="sketch-display" class="sketch-section">
+        <p class="sketch-prompt">
+          Inspiration: Slime Molds
+          <br />
+          <br />
+          Concept: The organic architecture of SN-2040 pays direct homage to slime molds. In nature, these
+          single-celled organisms solve complex spatial problems through decentralized networks, growing only where
+          they are most efficient.
+          <br />
+          <br />
+          Our wearable device mimics this biological logic. The symbiotic array does not impose a rigid structure on
+          the body; instead, it “grows” on the skin behind the ear.
+        </p>
+        <a class="sketch-link" href="#sketch-display">Sketches</a>
+        <div class="sketch-grid">
+          <figure class="sketch-item"><img src="./assets/sketch-1.png" alt="Sketch display 1" /></figure>
+          <figure class="sketch-item"><img src="./assets/sketch-2.png" alt="Sketch display 2" /></figure>
+          <figure class="sketch-item"><img src="./assets/sketch-3.png" alt="Sketch display 3" /></figure>
+        </div>
+      </section>
+
+      <section id="diegetic-prototype" class="prototype-section">
+        <div class="prototype-stack" id="prototype-stack" aria-label="Diegetic prototype image stack">
+          <button class="prototype-card" type="button"><img src="./assets/prototype-1.png" alt="Prototype photo 1" /></button>
+          <button class="prototype-card" type="button"><img src="./assets/prototype-2.png" alt="Prototype photo 2" /></button>
+          <button class="prototype-card" type="button"><img src="./assets/prototype-3.png" alt="Prototype photo 3" /></button>
+          <button class="prototype-card" type="button"><img src="./assets/prototype-4.png" alt="Prototype photo 4" /></button>
+        </div>
+        <div class="prototype-copy">
+          <p class="panel-title">Prototype Narrative</p>
+          <h3>Diegetic Prototype</h3>
+          <p>
+            During the computational modeling phase, we utilized Grasshopper (Rhino) to simulate a tubular network
+            system inspired by slime mold growth patterns. This algorithmic approach allowed us to emulate the organic
+            efficiency of biological systems, resulting in an optimized morphology that captures the 'ideal state' of
+            our product's form.
+          </p>
+          <p>
+            In the final production phase, we created prototypes using materials such as acrylic paint, electrical
+            wire, transparent modeling clay, and ultra-light clay.
+          </p>
+        </div>
+      </section>
+
+      <section id="operational-protocol" class="video-section">
+        <div class="video-copy">
+          <p class="panel-title">Operational Note</p>
+          <h3>Operational Protocol &amp; Safety</h3>
+          <p class="video-text">
+            <strong>Exemption Clause:</strong> Participation in the Renting Cloud AI program via the Synaptic Proxy
+            constitutes a full waiver of physical liability. During active Proxy Mode, the host remains exempt from
+            collisions or damages, as bodily agency is temporarily surrendered to the AI controller.
+          </p>
+          <p class="video-text">
+            <strong>Warning:</strong> Frequent transition between Free Will and Proxy Control may result in mild
+            neurological agnosia or memory fragmentation. Ensure stable carotid attachment for consistent signal
+            integrity.
+          </p>
+        </div>
+        <video
+          class="product-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="./assets/hero-gallery.png?v=1"
+        >
+          <source src="./assets/2026-04-24_205813_175.mp4" type="video/mp4" />
+          当前浏览器不支持视频播放。
+        </video>
+      </section>
+
+    </main>
+
+    <footer id="team" class="site-footer team-section">
+      <div class="footer-inner">
+        <p class="footer-left">© 2026 GSA | Stage 2 student work.</p>
+        <div class="footer-right">
+          <p class="team-title">Design Team</p>
+          <div class="members">
+            <span>Xinran Qian</span>
+            <span>Yutian Fan</span>
+            <span>Jiayi Shen</span>
+            <span>Jiaxuan Ye</span>
+            <span>Siying Xu</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
